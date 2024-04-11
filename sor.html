@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-red-400 to-red-200">
+    <div class="grid place-items-center">
+        <div class="bg-white w-2/5 drop-shadow-2xl rounded mt-6 h-auto">
+           
+            <form id="form">
+                <div>
+                    <div class="flex space-x-2 ml-10">
+                        <div class="mt-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" class="w-6 h-6 text-pink-400"/>
+                                </svg>
+                                
+                        </div>
+                        <h1 class="text-red-300 text-3xl font-bold mt-8">Grocery List</h1>
+                    </div>
+                </div>
+                <div class="space-x-4 flex">
+                    <input
+                     id="itemInput" type="text" placeholder="Text"
+                     class="mt-9 ml-10 w-60 h-14 pl-3 border border-4 border-blue-300 rounded focus:outline-none"
+                    >
+                    <div>
+                        <select id="categorydropdown"
+                            class="border p-3 mt-9 border-4 border-blue-300 rounded focus:outline-none">
+                            <option value="" selected disabled hidden></option>
+                            <option value="fruit">fruit</option>
+                            <option value="dairy">dairy</option>
+                            <option value="grain">grain</option>
+                        </select>
+                    </div>
+                    <button class="text-white p-3 rounded bg-sky-600 mt-9" type="button">Add</button>
+                </div>
+            </form>
+            <div>
+                <ul id="list-items" class="divide-y-2  divide-red-100 mt-4 ml-7">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+      
+      
+      
+      
